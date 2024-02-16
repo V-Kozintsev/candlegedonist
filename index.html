@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Добро пожаловать в наш интернет-магазин роскошных свечей ручной работы! У нас вы найдете уникальные, элегантные и ароматные свечи, созданные с любовью и вниманием к деталям. Используя только самые высококачественные материалы, наши мастера творят настоящие произведения искусства, которые создадут атмосферу тепла, уюта и романтики в вашем доме. Разбудите в себе чувство гармонии и сделайте особенными ваши вечера с нашими свечами ручной работы. Откройте новое измерение релаксации и наслаждайтесь неповторимым опытом погружения в мир мягкого света и приятных ароматов. Приобретайте свечи ручной работы у нас и станьте частью нашей эксклюзивной коллекции.">
+    <meta name="keywords" content="свечи, свечи ручной работы, роскошные свечи, натуральные свечи, декоративные свечи, экологически чистые свечи">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="logo/candle.svg" sizes="any">
+    <link rel="icon" type="image/png" href="logo/candle.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="logo/candle.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="logo/candle.png">
+    <link rel="icon" href="logo/favicon.ico" type="image/x-icon">
+    <title>Интернет-магазин свечей ручной работы "Гедонист"</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(96385171, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            ecommerce:"dataLayer"
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/96385171" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <nav class="navbar" id="main"> 
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar__container">
+            <a href="#main"><img class="logo" src="logo/Logo.svg" alt="logo"></a>
+            <div class="navbar-container">  
+                <ul class="navbar__menu-items">
+                    <li class="navbar__menu-items_item"><a href="#main-1" class="active">Главная</a></li>
+                    <li class="navbar__menu-items_item"><a href="#about">О нас</a></li>
+                    <li class="navbar__menu-items_item"><a href="#collection">Каталог</a></li>
+                    <li class="navbar__menu-items_item"><a href="#contact">Контакты</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <button class="cart-btn" id="view-cart-btn" onclick="viewCart()">Посмотреть корзину</button>
+    <ul id="cart-items"></ul>
+    <section class="first-section" id="main-1">
+        <div class="header__box">
+            <img class="log1" src="logo/candle.svg" alt="логотип свеча">
+            <h1 class="title-first">
+                <span class="title-first__main">СДЕЛАНЫ С ЛЮБОВЬЮ</span>
+                <span class="title-first__secondary">свечи ручной работы из натуральных материалов</span>
+            </h1>
+            <a href="#collection"><button class="btn margin">Заказать</button></a>
+        </div>
+        <a href="#collection"><div class="jumping-arrow"></div></a>
+    </section>
+
+    <!-- корзина -->
+        <div class="cart-icon">
+            <img src="cart-icon.png" alt="Cart" class="cart-icons">
+        </div>
+
+    <div class="cart-items">
+        <div class="close-btn">&times;</div>
+        <h3>Ваша корзина:</h3>
+        <div class="cart-content"></div>
+        <div class="cart-total"></div>
+        <div class="cart-buttons">
+            <a href="#contact"><button class="checkout-btn" id="checkoutBtn">Оформить</button></a>
+            <button class="clear-cart-btn">Очистить корзину</button>
+        </div>
+    </div>
+    <!-- корзина -->
+
+    <section class="colection" id="collection">
+        <h2 class="title-two">Наша уникальная коллекция</h2>
+        <div class="colection-container"> 
+            <div class="candle-item" id="bochonok">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/bochonok.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Свеча S "БОЧОНОК" 25мл</h3>
+                        <span class="candle-item_2">Деревянный потрескивающий фитиль</span><br>
+                        <span class="candle-item_3">4 варианта подстветки подсвечника</span><br>
+                        <p class="candle-item_4">Цена: 490 р.</p>
+                        <a href="svecha-bochonok.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>           
+                </div>
+            </div>
+            <div class="candle-item" id="shkatulka">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/candle-main-1.jpeg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Свеча М "ШКАТУЛКА" 45мл</h3>
+                        <span class="candle-item_2">Деревянный потрескивающий фитиль</span><br>
+                        <span class="candle-item_3">4 варианта подстветки подсвечника</span><br>
+                        <p class="candle-item_4 item-details">Цена: 750 р.</p>
+                        <a href="svecha-shkatulka.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>           
+                </div>
+            </div>
+            <div class="candle-item" id="aromasahe">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/aromasahe.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">АРОМАСАШЕ</h3>
+                        <span class="candle-item_2">2 варианта: "плиточка" и "сердечко"</span><br>
+                        <span class="candle-item_3">Для ароматизации шкафа, ящика, сумки итд.</span><br>
+                        <p class="candle-item_4">Цена: 350 р. | 190 р.</p>
+                        <a href="svecha-aromasashe.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>           
+                </div>
+            </div>
+            <div class="candle-item" id="difuzor">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/difuzor.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">ДИФФУЗОР 80мл</h3>
+                        <span class="candle-item_2">6 ароматных палочек в комплекте</span><br>
+                        <span class="candle-item_3">6 - 12 месяцев использования</span><br>
+                        <p class="candle-item_4">Цена: 1650 р.</p>
+                        <a href="svecha-difuzor.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>           
+                </div>
+            </div>
+            <div class="candle-item" id="avtoparfum">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/avtoparfum.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">АВТОПАРФЮМ 8мл</h3>
+                        <span class="candle-item_2">Экологичные безопасные компоненты.</span><br>
+                        <span class="candle-item_3">Приятный аромат в салоне автомобиля.</span><br>
+                        <p class="candle-item_4">Цена: 400 р.</p>
+                        <a href="svecha-avtoparfum.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>           
+                </div>
+            </div>
+            <div class="candle-item" id="konus">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/konus.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Свеча "КОНУС" 120мл</h3>
+                        <span class="candle-item_2">Деревянный потрескивающий фитиль</span><br>
+                        <span class="candle-item_3">До 30 часов горения</span><br>
+                        <p class="candle-item_4">Цена: 1400 р.</p>
+                        <a href="svecha-konus.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        
+       
+    </section>
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__backgraund"></div>
+            <h3 class="about__title">
+                <span class="about__title-main">Гедонист - это человек, умеющий видеть прекрасное в любой, казалось бы, мелочи и наслаждаться этим. </span>
+                <span class="about__title-secondary">Добро пожаловать в наш интернет-магазин роскошных свечей ручной работы! У нас вы найдете уникальные, элегантные и ароматные свечи, созданные с любовью и вниманием к деталям. Используя только самые высококачественные материалы, наши мастера творят настоящие произведения искусства, которые создадут атмосферу тепла, уюта и романтики в вашем доме. Разбудите в себе чувство гармонии и сделайте особенными ваши вечера с нашими свечами ручной работы. Откройте новое измерение релаксации и наслаждайтесь неповторимым опытом погружения в мир мягкого света и приятных ароматов. Приобретайте свечи ручной работы у нас и станьте частью нашей эксклюзивной коллекции.</span>
+                
+            </h3>
+            <a href="#collection"><button class="btn-about">Каталог</button></a>
+        </div>
+    </section>
+    
+    <section class="section-book" id="contact">
+        <div class="book__form">
+            <form action="sendmail.php" method="POST" class="form">
+                <div class="text-align-center">
+                    <h4 class="title-secondary">
+                        Для заказа свяжитесь с нами любым удобным способом
+                    </h4>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Имя Фамилия *" id="name" maxlength="20" name="name"  required>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Ваш email *" id="email" maxlength="20" name="email" required>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Номер телефона *" id="phone" maxlength="19" name="phone" required>
+                </div>
+                <div class="form__group">
+                    <textarea class="form__input_text" placeholder="Текст" id="text" name="text" required></textarea>
+                </div>
+                
+                <div class="form__group">
+                    <input type="checkbox" class="form__check" id="privacy-check" required>
+                    <label for="privacy-check" class="form__label">Я соглашаюсь с <a href="privacy.html" target="_blank">политикой в отношении персональных данных</a></label>
+                </div>
+                <div class="form__group">
+                    <button class="btn-form btn_broun" type="submit">Отправить</button>
+                </div>
+                <div class="box-icon">                   
+                    <div class="icons-item">
+                        <a href="https://api.whatsapp.com/send/?phone=79010046036">
+                            <div class="circle">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="icons-item">
+                        <a href="tel:+79010046036">
+                            <div class="circle">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="icons-item">
+                        <a href="https://vk.com/gedonistcandles">
+                            <div class="circle">
+                                <i class="fab fa-vk"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="rec-yandex">
+            <p class="rec-yandex_text">Мы заботимся о качестве нашей продукции, осуществляем контроль каждого заказа и всегда остаемся на связи. <br>
+            <br>Нам важно ваше мнение о нашей работе!
+            Оцените нашу работу через сервис Яндекс!<a href="https://webmaster.yandex.ru/siteinfo/?site=https://свечигедонист.рф"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?https://свечигедонист.рф&theme=light&lang=ru"/></a></p>
+            <iframe class="rating" src="https://yandex.ru/sprav/widget/rating-badge/24826125577?type=rating" width="150" height="50" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer-item__container">
+                <a href="#main"><li class="item-footer">Главная</li></a>
+                <a href="#about"><li class="item-footer">О нас</li></a>
+                <a href="#collection"><li class="item-footer">Каталог</li></a>
+                <a href="#contact"><li class="item-footer">Контакты</li></a>
+            </ul>
+            <p class="developer">Сайт разработал v_kozintcev@mail.ru</p>
+        </div>
+
+    </footer>
+
+<script>
+    document.getElementById('submit-button').addEventListener('click', function() {
+        if (document.getElementById('privacy-check').checked) {
+            document.querySelector('.form').submit();
+        } else {
+            alert('Пожалуйста, согласитесь с политикой конфиденциальности');
+        }
+    });
+</script>
+<script src="cart.js"></script>
+<script src="js/active.js"></script>
+<script src="js/number.js"></script>
+<script src="scrool.js"></script>
+<script src="js/basket.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

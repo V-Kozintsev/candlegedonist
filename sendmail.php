@@ -24,7 +24,7 @@ try {
     $mail->Host = 'smtp.mail.ru';
     $mail->SMTPAuth = true;
     $mail->Username = 'v_kozintcev@mail.ru'; // Укажите здесь вашу почту
-    $mail->Password = 'witzPgsy0vFpwzJA1NTq'; // Укажите здесь пароль от почты
+    $mail->Password = '****'; // Укажите здесь пароль от почты
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 

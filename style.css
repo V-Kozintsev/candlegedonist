@@ -6,17 +6,7 @@
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16), 0 0.1rem 0.3rem rgba(0, 0, 0, 0.23);
     transform: translateY(-0.2rem);
 }
-.jumping-arrow {
-    width: 3rem;
-    height: 3rem;
-    background-image: url('..//img/down-arrow.svg');
-    background-size: contain;
-    background-repeat: no-repeat; 
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-animation: jumping 1s infinite;
-    animation: jumping 1s infinite;
+
 }
 @-webkit-keyframes jumping {
     0% {
